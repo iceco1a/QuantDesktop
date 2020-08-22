@@ -11,6 +11,11 @@ export default new Router({
       component: require('@/components/LandingPage').default
     },
     {
+      path: '/Menu',
+      name: 'Menu',
+      component: require('@/components/header/menu').default
+    },
+    {
       path: '*',
       redirect: '/'
     }

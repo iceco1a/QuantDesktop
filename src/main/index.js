@@ -19,10 +19,13 @@ function createWindow () {
   /**
    * Initial window options
    */
+  const { Menu } = require('electron')
+  Menu.setApplicationMenu(null)
+  // hide menu for Mac
   mainWindow = new BrowserWindow({
-    height: 563,
+    height: 786,
     useContentSize: true,
-    width: 1000
+    width: 1300
   })
 
   mainWindow.loadURL(winURL)
